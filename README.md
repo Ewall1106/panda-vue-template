@@ -1,2 +1,2 @@
-# panda-vue-template
-panda-cli脚手架生成的内容模板
+## panda-vue-template
+create-panda-app脚手架生成的内容模板。
