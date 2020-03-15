@@ -21,6 +21,14 @@
 [create-panda-app]()脚手架的内容模板。  
 模板内容基于vue-cli3.x构建，在此基础上进行一些能力的补充，以便能更好的进行项目的开发和升级。
 
+## 使用
+- 使用[create-panda-app]()来构建项目
+- 直接使用这个模板：
+```
+$ git clone git@github.com:Ewall1106/panda-vue-template.git
+$ npm/yarn install
+$ npm run serve
+```
 
 ## Includes
 * [x] axios的封装与代理转发
