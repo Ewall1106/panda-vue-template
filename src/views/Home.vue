@@ -20,6 +20,7 @@ export default {
 .home {
   background: red;
   width: 100px;
-  box-shadow: 0 0 20px green;
+  height: 100px;
+  line-height: 100px;
 }
 </style>
