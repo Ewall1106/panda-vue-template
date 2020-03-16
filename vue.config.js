@@ -1,6 +1,8 @@
 'use strict'
 const path = require('path')
 
+const mockUrl = 'http://yapi.demo.qunar.com/mock/17982'
+
 function resolve (dir) {
   return path.join(__dirname, dir)
 }
@@ -18,6 +20,14 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
+    },
+    proxy: {
+      '/dev-api': {
+        target: mockUrl,
+        pathRewrite: { '^/dev-api': '' },
+        secure: false,
+        changeOrigin: true
+      }
     }
   },
   configureWebpack: {
@@ -31,6 +41,9 @@ module.exports = {
     }
   },
   chainWebpack (config) {
+    config.plugins.delete('preload') // TODO: need test
+    config.plugins.delete('prefetch') // TODO: need test
+
     // set svg-sprite-loader
     config.module
       .rule('svg')
@@ -48,6 +61,17 @@ module.exports = {
       })
       .end()
 
+    // set preserveWhitespace
+    config.module
+      .rule('vue')
+      .use('vue-loader')
+      .loader('vue-loader')
+      .tap(options => {
+        options.compilerOptions.preserveWhitespace = true
+        return options
+      })
+      .end()
+
     config
       // https://webpack.js.org/configuration/devtool/#development
       .when(process.env.NODE_ENV === 'development', config =>
@@ -55,17 +79,6 @@ module.exports = {
       )
 
     config.when(process.env.NODE_ENV !== 'development', config => {
-      config
-        .plugin('ScriptExtHtmlWebpackPlugin')
-        .after('html')
-        .use('script-ext-html-webpack-plugin', [
-          {
-            // `runtime` must same as runtimeChunk name. default is `runtime`
-            inline: /runtime\..*\.js$/
-          }
-        ])
-        .end()
-
       config.optimization.splitChunks({
         chunks: 'all',
         cacheGroups: {

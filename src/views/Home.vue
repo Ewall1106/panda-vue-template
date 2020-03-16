@@ -1,8 +1,19 @@
 <template>
-  <div class="home">{{val}}</div>
+  <div class="home">
+    {{val}}
+    <van-button type="default">默认按钮</van-button>
+  </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import { Button } from 'vant'
+import { getUserInfo } from '@/api/user'
+
+import axios from 'axios'
+
+Vue.use(Button)
+
 export default {
   name: 'Home',
   data () {
@@ -11,7 +22,14 @@ export default {
     }
   },
   mounted () {
-    console.error('asdf')
+    this.getInfo()
+  },
+  methods: {
+    getInfo () {
+      getUserInfo().then(res => {
+        console.log('ssssssssss', res)
+      })
+    }
   }
 }
 </script>
