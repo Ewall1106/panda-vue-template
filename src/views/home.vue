@@ -10,8 +10,6 @@ import Vue from 'vue'
 import { Button } from 'vant'
 import { getUserInfo } from '@/api/user'
 
-import axios from 'axios'
-
 Vue.use(Button)
 
 export default {
