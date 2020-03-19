@@ -10,7 +10,7 @@ module.exports = {
       propList: ['*'],
       viewportUnit: 'vw',
       fontViewportUnit: 'vw',
-      selectorBlackList: ['.ignore'],
+      selectorBlackList: ['.ignore', 'van'],
       minPixelValue: 1,
       mediaQuery: false,
       replace: true,
