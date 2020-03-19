@@ -2,7 +2,7 @@
   <div class="login-container">
     <div class="header">
       <img class="header__logo" src="@/assets/logo.png" alt="logo" />
-      <p class="header__title">熊猫商城账号登录</p>
+      <p class="header__title">panda-vue-template</p>
     </div>
 
     <van-form class="form" @submit="onSubmit">
