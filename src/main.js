@@ -8,16 +8,28 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import './icons'
 import './permission'
 
 // vant
-import { Button, Toast, Dialog, Field, Form, Notify } from 'vant'
+import {
+  Button,
+  Toast,
+  Dialog,
+  Field,
+  Form,
+  Notify,
+  Cell,
+  CellGroup
+} from 'vant'
 Vue.use(Toast)
   .use(Dialog)
   .use(Notify)
   .use(Field)
   .use(Form)
   .use(Button)
+  .use(Cell)
+  .use(CellGroup)
 
 Vue.config.productionTip = false
 

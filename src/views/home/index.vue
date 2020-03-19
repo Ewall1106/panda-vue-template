@@ -2,33 +2,38 @@
   <div class="home">
     <img class="logo" src="@/assets/logo.png" alt="logo" />
 
-    <h2>项目说明:</h2>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/Ewall1106/panda-vue-template"
-          target="_blank"
-          rel="noopener"
-        >panda-vue-template</a>
-      </li>
-    </ul>
+    <van-cell-group title="项目相关">
+      <van-cell title="vue-mall" is-link url="https://github.com/Ewall1106/mall" />
+      <van-cell
+        title="panda-vue-template"
+        is-link
+        url="https://github.com/Ewall1106/panda-vue-template"
+      />
+      <van-cell title="yapi接口文档" is-link url="http://yapi.demo.qunar.com/project/17982" />
+    </van-cell-group>
 
-    <h2>相关介绍:</h2>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/Ewall1106/panda-vue-template"
-          target="_blank"
-          rel="noopener"
-        >panda-vue-template</a>
-      </li>
-    </ul>
+    <van-cell-group title="相关介绍">
+      <van-cell title="vue-mall" is-link url="https://github.com/Ewall1106/mall" />
+      <van-cell
+        title="panda-vue-template"
+        is-link
+        url="https://github.com/Ewall1106/panda-vue-template"
+      />
+    </van-cell-group>
+
+    <svg-icon icon-class="backtop" :width="30" :height="30"/>
+    <back-top />
   </div>
 </template>
 
 <script>
+import BackTop from '@/components/BackTop'
+
 export default {
   name: 'Home',
+  components: {
+    BackTop
+  },
   data() {
     return {
       val: '11111'
@@ -41,13 +46,13 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh;
+  background: #f5f5f593;
   .logo {
+    display: block;
     width: 200px;
-    margin-top: 90px;
+    margin: 0 auto;
+    padding-top: 40px;
   }
   h2 {
     padding: 10px 0;
