@@ -23,12 +23,18 @@
 
 ## 介绍
 
-此为[create-panda-app](https://github.com/Ewall1106/create-panda-app)脚手架的内容模板之一。  
-该模板内容基于最新官方脚手架`vue-cli3.x`构建，在此基础上进行一些能力的补充，以便能更好的对新立的项目进行开发和升级。
+- 此为[create-panda-app](https://github.com/Ewall1106/create-panda-app)脚手架的内容模板之一。  
+- 该模板内容基于最新官方脚手架`vue-cli3.x`构建，在此基础上进行一些能力的补充，以便能更好的对新立的项目进行开发和升级。
 
 ## 使用
 
-- 推荐使用[create-panda-app](https://github.com/Ewall1106/create-panda-app)来使用本模板构建项目；
+- 推荐使用[create-panda-app](https://github.com/Ewall1106/create-panda-app)脚手架：
+## Usage
+```
+$ npm install create-panda-app -g
+$ panda init panda-vue-template my-project 
+```
+
 - 或直接`clone`使用这个模板：
 
 ```
