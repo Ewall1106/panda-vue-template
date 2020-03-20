@@ -20,7 +20,8 @@ import {
   Form,
   Notify,
   Cell,
-  CellGroup
+  CellGroup,
+  NavBar
 } from 'vant'
 Vue.use(Toast)
   .use(Dialog)
@@ -30,6 +31,7 @@ Vue.use(Toast)
   .use(Button)
   .use(Cell)
   .use(CellGroup)
+  .use(NavBar)
 
 Vue.config.productionTip = false
 

@@ -24,7 +24,7 @@ export default {
     },
     size: {
       type: String,
-      default: '24px'
+      default: '28px'
     },
     width: Number,
     height: Number

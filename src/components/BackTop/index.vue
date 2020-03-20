@@ -1,7 +1,7 @@
 <template>
-  <div class="back-top" v-show="isTabsIconFixed">
+  <div class="back-top" v-show="isShow">
     <span v-scroll-to="'body'">
-      <svg-icon icon-class="backtop" />
+      <svg-icon icon-class="backtop" :width="30" :height="30"/>
     </span>
   </div>
 </template>
@@ -25,11 +25,16 @@ Vue.use(VueScrollTo, {
 })
 
 export default {
+  props: {
+    offsetTop: {
+      type: Number,
+      default: 100
+    }
+  },
   data() {
     return {
-      myTop: 400,
-      isTabsIconFixed: false,
-      timer: null
+      timer: null,
+      isShow: false
     }
   },
   mounted() {
@@ -46,7 +51,8 @@ export default {
           window.pageYOffset ||
           document.documentElement.scrollTop ||
           document.body.scrollTop
-        this.isTabsIconFixed = scrollTop > this.myTop
+        console.log('asss', scrollTop)
+        this.isShow = scrollTop > this.offsetTop
       }, 15)
     }
   }

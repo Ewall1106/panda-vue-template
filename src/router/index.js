@@ -13,6 +13,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import('@/views/auth/login')
+  },
+  {
+    path: '/iconfont',
+    name: 'IconFont',
+    component: () => import('@/views/about/iconfont')
   }
 ]
 
