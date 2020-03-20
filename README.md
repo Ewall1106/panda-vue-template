@@ -1,5 +1,6 @@
 <p align="center">
-  <img width="200" height="200" src="https://raw.githubusercontent.com/Ewall1106/panda-vue-template/master/src/assets/logo.png">
+  <img width="100" height="100" src="https://raw.githubusercontent.com/Ewall1106/panda-vue-template/master/src/assets/logo.png">
+  <h3  align="center">panda-vue-template</h3>
 </p>
 
 <p align="center">
