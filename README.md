@@ -1,7 +1,6 @@
-<img align="center" src="https://raw.githubusercontent.com/Ewall1106/panda-vue-template/master/src/assets/logo.png
-" alt="logo" width="200" height="200">
-
-<p align="center" style="font-size:30px">panda-vue-template</p>
+<h3 align="center" style="font-size:30px"> 
+  <font size=6>panda-vue-template</font>
+</h3>
 
 <p align="center">
   <a href="https://github.com/vuejs/vue">
