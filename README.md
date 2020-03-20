@@ -25,8 +25,8 @@
 
 
 ## 使用
-- 使用[create-panda-app](https://github.com/Ewall1106/create-panda-app)来使用模板构建项目；
-- 直接`clone`使用这个模板：
+- 推荐使用[create-panda-app](https://github.com/Ewall1106/create-panda-app)来使用本模板构建项目；
+- 或直接`clone`使用这个模板：
 ```
 $ git clone git@github.com:Ewall1106/panda-vue-template.git
 $ npm/yarn install
