@@ -1,6 +1,11 @@
 <h3 align="center" style="font-size:30px"> 
-  <font size=6>panda-vue-template</font>
+  <font size=20>panda-vue-template</font>
 </h3>
+
+ <font size=6>panda-vue-template</font>
+  <font size=8>panda-vue-template</font>
+   <font size=10>panda-vue-template</font>
+
 
 <p align="center">
   <a href="https://github.com/vuejs/vue">
