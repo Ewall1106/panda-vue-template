@@ -1,4 +1,4 @@
-<h3 align="center">panda-vue-template</h3>
+<h1 align="center">panda-vue-template</h1>
 
 <p align="center">
   <a href="https://github.com/vuejs/vue">
