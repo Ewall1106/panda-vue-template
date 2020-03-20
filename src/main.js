@@ -1,8 +1,9 @@
 import Vue from 'vue'
+
 // A modern alternative to CSS resets
-import './styles/reset.css'
 // https://github.com/necolas/normalize.css
 import 'normalize.css/normalize.css'
+import './styles/index.scss'
 
 import App from './App.vue'
 import router from './router'
