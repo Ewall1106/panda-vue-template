@@ -25,6 +25,7 @@
 
 - 此为[create-panda-app](https://github.com/Ewall1106/create-panda-app)脚手架的内容模板之一。  
 - 该模板内容基于最新官方脚手架`vue-cli3.x`构建，在此基础上进行一些能力的补充，以便能更好的对新立的项目进行开发和升级。
+- [手把手教你搭建vue小商城](https://github.com/Ewall1106/mall)基于这个模板进行开发。
 
 ## 使用
 
