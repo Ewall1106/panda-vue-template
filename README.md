@@ -30,7 +30,6 @@
 ## 使用
 
 - 推荐使用[create-panda-app](https://github.com/Ewall1106/create-panda-app)脚手架：
-## Usage
 ```
 $ npm install create-panda-app -g
 $ panda init panda-vue-template my-project 
